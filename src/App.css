@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: solid 2px #cccccc79;
+  width: 400px;
+  font-size: 12px;
+  background-color: white;
+  background-image: url('assets/searchicon.png');
+  background-position: 10px 10px;
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  margin-bottom: 30px;
+    outline: none; 
+
+}
+
+.member {
+  border: solid 1px #cccccc79;
+  margin-bottom: 5px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+.member:not(.selected) {
+  opacity: 0.4;
+}
+
+.member .member-info {
+  display: flex;
+  align-items: center;
+}
+
+.member img {
+  height: 20px;
+}
+
+.member p {
+  margin: 10px;
+}
+
+.control-buttons {
+
+}
+
+.button {
+  border: none;
+  padding: 10px 30px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button.save {
+  background-image: linear-gradient(to right, #6cb6ff, #7985ff);
+  text-transform: uppercase;
+  box-shadow: 2px 1px 4px #7985ff;
+  color: white;
+}
+
+.button.cancel {
+  background-color: white;
+  color: #ccccccd2;
+  border: solid 1px #cccccc79;
+  text-transform: capitalize;
+
+}
+
+
+
+
